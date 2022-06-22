@@ -1,8 +1,8 @@
 
-const colorPicker = document.getElementById('colorPicker');
+const colorPicker = document.querySelector('#colorPicker');
 
 colorPicker.addEventListener('input',(event)=>{
-  const botonClick = document.getElementById('boton-visualizar');
+  const botonClick = document.querySelector('#boton-visualizar');
   botonClick.addEventListener('click', ()=> {
     const paragraph = document.querySelector('.colorHexadecimal');
     const card = document.querySelector('.card');
