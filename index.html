@@ -4,25 +4,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <!-- CSS Boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <link rel="stylesheet" href="./style.css">
   <title>Color Picker</title>
 </head>
 
 <body>
-
-  <h1 id="titlePrimary">Color Picker</h1>
-  <div class="ipt">
-    <input type="color" id="colorPicker" value="#000">
-  </div>
-  <div class="btn">
-    <button class="btn-primary"><strong>Visualizar</strong></button>
+  <div class="container text-center">
+    <label for="colorPicker" class="form-label fs-4 pt-3">Color picker</label>
+    <input type="color" class="form-control form-control-color mx-auto w-25 mt-2" id="colorPicker" value="#563d7c"
+      title="Choose your color">
+    <div class="boton">
+      <button type="button" class="btn btn-primary mt-4 w-25" id="boton-visualizar">Visualizar</button>
+    </div>
+    <p class="colorHexadecimal mt-3 fs-3">#563d7c</p>
+    <div class="card p-5 w-25 mx-auto" style="background-color: #563d7c"></div>
   </div>
   <script src="./main.js"></script>
-  <h2 style="text-align: center;" class="color">#000000</h2>
-  <div class="colorTable"></div>
 </body>
 
 </html>

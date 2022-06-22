@@ -1,14 +1,18 @@
-const elementColorPicker = document.getElementById('colorPicker');
-const elementBtn = document.querySelector('.btn-primary');
 
-  elementColorPicker.addEventListener('input', (event)=> {
-    elementBtn.addEventListener('click', () => {
-      const colorTitle = document.querySelector('.color');
-      const colorTable = document.querySelector('.colorTable');
-      colorTitle.textContent = event.target.value;
-      colorTable.style.backgroundColor = event.target.value;
-    });
-});
+const colorPicker = document.getElementById('colorPicker');
+
+colorPicker.addEventListener('input',(event)=>{
+  const botonClick = document.getElementById('boton-visualizar');
+  botonClick.addEventListener('click', ()=> {
+    const paragraph = document.querySelector('.colorHexadecimal');
+    const card = document.querySelector('.card');
+    paragraph.textContent = event.target.value;
+    card.style.backgroundColor = event.target.value;
+  })
+})
+
+
+
 
 /*
 function actualizar(event){
